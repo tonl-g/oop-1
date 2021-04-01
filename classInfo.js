@@ -24,7 +24,7 @@ canVote() {
         console.log(`${this.firstName} ${this.lastName} ne peut pas voter`)
     }
 }
-/* mostSkilledDev() {
+/* mostSkilledDev() { A revoir
     if (this.language.length > this.language.length) {
         console.log(`${this.firstName} connait plus de langages que ${this.firstName}.`)
       } else if (this.language.length < this.language.length) {
@@ -44,4 +44,4 @@ alice.printInfo()
 alice.canVote()
 charlie.canVote()
 
-// alice.mostSkilledDev()
+// mostSkilledDev()
