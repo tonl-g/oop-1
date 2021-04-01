@@ -4,13 +4,13 @@ const alice = {
     firstName: 'Alice',
     lastName : 'Liddell',
     age: 28,
-    languages: ['Javascript', 'Ruby'],
+    language: ['Javascript', 'Ruby'],
 }
 
 const bob = {
     firstName: 'Bob',
     lastName: 'Lemon',
-    languages: ['Javascript'],
+    language: ['Javascript'],
     age: 30,
 }
 
@@ -18,14 +18,14 @@ const charlie = {
     firstName: 'Charlie',
     lastName: 'Charlot',
     age: 8,
-    languages: ['Aucun'],
+    language: ['Aucun'],
 }
 
 const printInfo = (person) => {
     console.log(`Firstname: ${person.firstName}`)
     console.log(`Lastname: ${person.lastName}`)
     console.log(`Age: ${person.age}`)
-    console.log(`Langages: ${person.languages}`)
+    console.log(`Langages: ${person.language}`)
 }
   
 printInfo(alice)

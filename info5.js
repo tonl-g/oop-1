@@ -7,13 +7,13 @@ const alice = {
     firstName: 'Alice',
     lastName : 'Liddell',
     age: 28,
-    languages: ['Javascript', 'Ruby'],
+    language: ['Javascript', 'Ruby'],
 }
 
 const bob = {
     firstName: 'Bob',
     lastName: 'Lemon',
-    languages: ['Javascript', 'Python'],
+    language: ['Javascript', 'Python'],
     age: 30,
 }
 
@@ -21,13 +21,13 @@ const charlie = {
     firstName: 'Charlie',
     lastName: 'Charlot',
     age: 8,
-    languages: ['Aucun'],
+    language: ['Aucun'],
 }
 
 const mostSkilledDev = (person) => {
-    if (alice.languages.length > bob.languages.length) {
+    if (alice.language.length > bob.language.length) {
         console.log(`${alice.firstName} connait plus de langages que ${bob.firstName}.`)
-      } else if (alice.languages.length < bob.languages.length) {
+      } else if (alice.language.length < bob.language.length) {
         console.log(`${alice.firstName} connait moins de langages que ${bob.firstName}.`)
       } else {
         console.log(`${alice.firstName} and ${bob.firstName} connaissent le même nombre de langages.`)
