@@ -19,20 +19,23 @@ printInfo() {
     }
 canVote() {
     if (this.age >= 18) {
-        console.log(`${this.firstName} ${this.lastName} peut voter`)
+        return true
     } else {
-        console.log(`${this.firstName} ${this.lastName} ne peut pas voter`)
+        return false
     }
 }
-/* mostSkilledDev() { A revoir
-    if (this.language.length > this.language.length) {
-        console.log(`${this.firstName} connait plus de langages que ${this.firstName}.`)
-      } else if (this.language.length < this.language.length) {
-        console.log(`${this.firstName} connait moins de langages que ${this.firstName}.`)
-      } else {
-        console.log(`${this.firstName} and ${this.firstName} connaissent le même nombre de langages.`)
-      }    
-} */
+mostSkilledDev(human) {
+    const length1 = this.language.length
+    const length2 = human.language.length
+
+    if (length1 > length2) {
+      return this.firstName
+    } else if (length1 < length2) {
+        return human.firstName
+    } else {
+        return 'draw'
+    }    
+  }
 }
 
 const alice = new Human('Alice', 'Liddell', 27, ['Javascript', 'Ruby'])
@@ -41,7 +44,11 @@ const charlie = new Human('Charlie', 'Charlot', 8, ['Aucun'])
 
 alice.printInfo()
 
-alice.canVote()
-charlie.canVote()
+console.log(alice.canVote())
+console.log(charlie.canVote())
 
-// mostSkilledDev()
+console.log(alice.mostSkilledDev(bob));
+
+
+
+

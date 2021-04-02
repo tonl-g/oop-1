@@ -3,46 +3,53 @@ Par exemple canVote(alice) retournera true et canVote(charlie) retournera false.
 La majorité est à 18 ans. */
 
 const alice = {
-    firstName: 'Alice',
-    lastName : 'Liddell',
-    age: 28,
+  firstName: 'Alice',
+  lastName : 'Liddell',
+  age: 28,
 }
 
 const bob = {
-    firstName: 'Bob',
-    lastName: 'Lemon',
-    age: 30,
+  firstName: 'Bob',
+  lastName: 'Lemon',
+  age: 30,
 }
 
 const charlie = {
-    firstName: 'Charlie',
-    lastName: 'Charlot',
-    age: 8,
+  firstName: 'Charlie',
+  lastName: 'Charlot',
+  age: 8,
 }
 
-const canVote = (person) => {
-    if (person.age >= 18) {
-        console.log(`${person.firstName} peut voter`)
-    } else {
-        console.log(`${person.firstName} ne peut pas voter`)
-    }
+const canVote = (person) => { // Return true or false
+  return person.age >= 18 ? true : false
+}
+
+console.log(canVote(alice))
+console.log(canVote(charlie))
+
+/* const canVote = (person) => {
+  if (person.age >= 18) {
+    console.log(`${person.firstName} peut voter`)
+  } else {
+    console.log(`${person.firstName} ne peut pas voter`)
+  }
 }
 
 canVote(alice)
-canVote(charlie)
+canVote(charlie) */
 
 /* class Person {
-    constructor(firstName, lastName,age) {
-        this.firstName = firstName
-        this.lastName = lastName
-        this.age = age
-    }
+  constructor(firstName, lastName,age) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.age = age
+  }
 canVote() {
-    if (this.age >= 18) {
-        console.log(`${this.firstName} ${this.lastName} peut voter`)
-    } else {
-        console.log(`${this.firstName} ${this.lastName} ne peut pas voter`)
-    }
+  if (this.age >= 18) {
+    console.log(`${this.firstName} ${this.lastName} peut voter`)
+  } else {
+    console.log(`${this.firstName} ${this.lastName} ne peut pas voter`)
+  }
 }
 }
 
